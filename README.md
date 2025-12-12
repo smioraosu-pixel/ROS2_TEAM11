@@ -25,4 +25,4 @@ before you run
 ros2 run robot_controller run_controller
 
 In a fourth terminal, the following command can be run to generate time response plots for each joint:
-ros2 run robot_controller plot_joint_data.py
+ros2 run robot_controller plot_joint_data
