@@ -9,7 +9,7 @@ colcon build --package-select robot_controller
 
 
 Terminal 1: (keep this one running b/c its what runs RViz with the correct settings)
-ros2 run robot_controller visualize.launch.py
+ros2 launch robot_controller visualize.launch.py
 
 Terminal 2: (This one just publishes the joint states for RViz and for the main loop)
 ros2 run robot_controller joint
@@ -23,3 +23,6 @@ Save the changes, and dont forget to run
 colcon build --package-select robot_controller
 before you run 
 ros2 run robot_controller run_controller
+
+In a fourth terminal, the following command can be run to generate time response plots for each joint:
+ros2 run robot_controller plot_joint_data.py
