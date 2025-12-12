@@ -29,7 +29,8 @@ setup(
     entry_points={
         'console_scripts': [
             'run_controller = robot_controller.controller:main',
-            'joint = robot_controller.joint_publisher:main'
+            'joint = robot_controller.joint_publisher:main',
+            'plot_joint_data = robot_controller.plot_joint_data:main'
         ],
     },
 )
